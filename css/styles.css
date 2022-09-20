@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-content: center;
+background-position:top left,  bottom right;
+font-size: .9375rem;
+font-family: 'League Spartan', sans-serif;
+}
+
+main{
+   margin: auto;
+   width: 68.75rem;
+}
+.profile-img{
+    border-radius: 50%;
+    height: 5vh;
+    position: relative;
+    margin: .45rem .625rem 0 0;
+}
+h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+}
+h1, h2, h3{
+    margin: 0;
+}
+
+h2{
+    color: hsl(300, 43%, 22%);
+}
+.card-text >h2{
+    color: hsl(300, 24%, 96%);
+}
+p{
+    color: hsl(303, 10%, 53%);
+}
+.card >p{
+    color: hsl(300, 24%, 96%);
+}
+
+h3{
+    color: hsl(333, 80%, 67%);
+}
+.upper-section{
+    display: flex;
+    justify-content: space-between;
+}
+.upper-section-left{
+    width: 25rem;
+}
+.upper-section-right{
+    width: 50%;
+}
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+.card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: .3125rem;
+    width: 20rem;
+    padding: 1.25rem;
+}
+.card-top{
+    display: flex;
+    
+}
+.star-box{
+    display: flex;
+    background-color: rgb(247, 242, 247);
+    border-radius: .3125rem;
+    column-gap: 1.25rem;
+    padding: .625rem;
+    font-size: 10px;
+    width: 300px;
+    margin-left: auto;
+}
+.stars{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.star-box1{
+    margin-right: 5rem;
+}
+.star-box2{
+    margin: .625rem 2.5rem .625rem auto;
+}
+
+@media screen and (max-width: 53.125rem) {
+body{
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+}
+main{
+    width: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 150vh;
+    flex-direction: column;
+
+}
+.upper-section-left{
+    width: 17.5rem;
+
+}
+.upper-section-right{
+    width: 17.5rem;
+
+}
+    .upper-section{
+        flex-direction: column;
+    text-align: center;
+        
+    }
+  
+    .bottom-section{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        row-gap: 1.25rem;
+    }
+    .card{
+        width: 15rem;
+    }
+    .star-box{
+        display: flex;
+        background-color: rgb(247, 242, 247);
+        border-radius: .3125rem;
+        column-gap: 1.25rem;
+        padding: 1rem;
+        font-size: .625rem;
+        width: 15rem;
+        flex-direction: column;
+   
+    }
+    .stars{
+        display: flex;
+        justify-content: center;
+        margin-bottom: .3125rem;
+        
+    }
+    .star-box2{
+        margin: 1.25rem 0 1.25rem 0;
+    }
+    .star-box1{
+        margin:  0;
+    }
+    .star-box3{
+margin: 0;
+    }
+}
+
+@media screen and (max-width: 71rem)  and (min-width: 53.125rem){
+    main{
+        width: 90%;
+        
+    }
+    .bottom-section{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 2rem;
+    }
+}
